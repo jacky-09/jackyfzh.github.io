@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>pyecharts详细教程：环境搭建 | Jacky的个人博客</title><meta name="keywords" content="环境搭建,pyecharts"><meta name="author" content="Jacky Feng"><meta name="copyright" content="Jacky Feng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="搭建开发环境也很重要！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pyecharts详细教程：环境搭建">
+<meta property="og:url" content="http://example.com/2020/07/11/pyecharts-huanjing/index.html">
+<meta property="og:site_name" content="Jacky的个人博客">
+<meta property="og:description" content="搭建开发环境也很重要！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596800229389&di=9ea4a8947f980e324399f72c3593e416&imgtype=0&src=http%3A%2F%2Fpic4.zhimg.com%2Fv2-f4633bb0f22c7c05f3b1bf27ddb08ffd_1200x500.jpg">
+<meta property="article:published_time" content="2020-07-11T14:10:11.000Z">
+<meta property="article:modified_time" content="2020-08-07T12:04:32.254Z">
+<meta property="article:author" content="Jacky Feng">
+<meta property="article:tag" content="环境搭建">
+<meta property="article:tag" content="pyecharts">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596800229389&di=9ea4a8947f980e324399f72c3593e416&imgtype=0&src=http%3A%2F%2Fpic4.zhimg.com%2Fv2-f4633bb0f22c7c05f3b1bf27ddb08ffd_1200x500.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2020/07/11/pyecharts-huanjing/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'pyecharts详细教程：环境搭建',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2020-08-07 20:04:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.niupic.com/images/2022/03/28/9XBI.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1596800229389&amp;di=9ea4a8947f980e324399f72c3593e416&amp;imgtype=0&amp;src=http%3A%2F%2Fpic4.zhimg.com%2Fv2-f4633bb0f22c7c05f3b1bf27ddb08ffd_1200x500.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jacky的个人博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">pyecharts详细教程：环境搭建</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-07-11T14:10:11.000Z" title="发表于 2020-07-11 22:10:11">2020-07-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-07T12:04:32.254Z" title="更新于 2020-08-07 20:04:32">2020-08-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="pyecharts详细教程：环境搭建"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>俗话说,”工欲善其事,必先利其器”,今天,我们就来搭建pyecharts的环境吧!</p>
+<h2 id="搭建Python环境"><a href="#搭建Python环境" class="headerlink" title="搭建Python环境"></a>搭建Python环境</h2><p>这个我就不多说了,大家应该都有,没有的话参见以下教程:</p>
+<ul>
+<li><p>廖雪峰的个人网站:<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1016959663602400/1016959856222624">安装Python</a></p>
+</li>
+<li><p>百度经验:<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/03b2f78c1e39d35ea237ae04.html">Python环境搭建和配置</a></p>
+</li>
+</ul>
+<h2 id="合适的编辑器"><a href="#合适的编辑器" class="headerlink" title="合适的编辑器"></a>合适的编辑器</h2><p>如果是做数据分析,推荐以下四款编辑器:</p>
+<h3 id="notebook系列"><a href="#notebook系列" class="headerlink" title="notebook系列"></a>notebook系列</h3><hr>
+<h4 id="Jupyter-lab-四星-推荐"><a href="#Jupyter-lab-四星-推荐" class="headerlink" title="Jupyter lab [四星(推荐)]"></a>Jupyter lab [四星(推荐)]</h4><p>推荐教程:<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/87403131">JupyterLab，极其强大的下一代notebook！</a></p>
+<h4 id="Jupyter-notebook-二星"><a href="#Jupyter-notebook-二星" class="headerlink" title="Jupyter notebook [二星]"></a>Jupyter notebook [二星]</h4><p>推荐教程:<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/127839755">小白都能看懂的Jupyter安装教程，带你绕过很多坑（Windows版）</a></p>
+<h3 id="文本编辑器系列"><a href="#文本编辑器系列" class="headerlink" title="文本编辑器系列"></a>文本编辑器系列</h3><hr>
+<h4 id="Visual-Studio-Code-Vscode-五星-推荐"><a href="#Visual-Studio-Code-Vscode-五星-推荐" class="headerlink" title="Visual Studio Code (Vscode) [五星(推荐)]"></a>Visual Studio Code (Vscode) [五星(推荐)]</h4><p>推荐教程:<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/126322646">VSCode配置Python环境指南</a></p>
+<h4 id="Pycharm-三星-没用过"><a href="#Pycharm-三星-没用过" class="headerlink" title="Pycharm [三星(没用过)]"></a>Pycharm [三星(没用过)]</h4><p>推荐教程:<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/139903697">pycharm的安装和配置</a></p>
+<h2 id="pyecharts安装"><a href="#pyecharts安装" class="headerlink" title="pyecharts安装"></a>pyecharts安装</h2><p>接下来安装pyecharts数据分析工具,pip3有三种安装方法:</p>
+<ol>
+<li>直接安装</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install pyecharts</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>限时安装(防报错)</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 --<span class="built_in">timeout</span>=100 install pyecharts</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>换源安装(飞速)</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install pyecharts -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>综合(推荐)</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 --<span class="built_in">timeout</span>=100 install pyecharts -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+<h3 id="基本完成"><a href="#基本完成" class="headerlink" title="基本完成"></a>基本完成</h3><p>这样环境就搭建完成了,可以开始绘图啦,绘图的内容下一章讲!</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Jacky Feng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2020/07/11/pyecharts-huanjing/">http://example.com/2020/07/11/pyecharts-huanjing/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Jacky的个人博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</a><a class="post-meta__tags" href="/tags/pyecharts/">pyecharts</a></div><div class="post_share"><div class="social-share" data-image="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1596800229389&amp;di=9ea4a8947f980e324399f72c3593e416&amp;imgtype=0&amp;src=http%3A%2F%2Fpic4.zhimg.com%2Fv2-f4633bb0f22c7c05f3b1bf27ddb08ffd_1200x500.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/07/11/pyecharts-jichu/"><img class="prev-cover" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1596800462603&amp;di=94205e87fa24fa9dd01af42a17a5eba3&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.west.cn%2Fcms%2Fimages%2F2018-08-19%2F4cdhbxk4ovv.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">pyecharts详细教程：绘制基础图表</div></div></a></div><div class="next-post pull-right"><a href="/2020/07/11/pyecharts-xu/"><img class="next-cover" src="https://user-images.githubusercontent.com/19553554/71825144-2d568180-30d6-11ea-8ee0-63c849cfd934.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">pyecharts详细教程：序言</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/07/17/drf-vue-huanjing/" title="drf+vue全栈教程：环境搭建"><img class="cover" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596802466047&di=32ecc71712531dbace9d637011e7e1c6&imgtype=0&src=http%3A%2F%2Fzbjquan.zbjimg.com%2Fforum%2F7niu%2F201809%2F28%2F175317az6j6wxrjsej171j.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-17</div><div class="title">drf+vue全栈教程：环境搭建</div></div></a></div><div><a href="/2020/07/11/pyecharts-xu/" title="pyecharts详细教程：序言"><img class="cover" src="https://user-images.githubusercontent.com/19553554/71825144-2d568180-30d6-11ea-8ee0-63c849cfd934.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-11</div><div class="title">pyecharts详细教程：序言</div></div></a></div><div><a href="/2020/07/11/pyecharts-jichu/" title="pyecharts详细教程：绘制基础图表"><img class="cover" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596800462603&di=94205e87fa24fa9dd01af42a17a5eba3&imgtype=0&src=http%3A%2F%2Fwww.west.cn%2Fcms%2Fimages%2F2018-08-19%2F4cdhbxk4ovv.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-11</div><div class="title">pyecharts详细教程：绘制基础图表</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.niupic.com/images/2022/03/28/9XBI.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jacky Feng</div><div class="author-info__description">时人莫小池中水，浅处无妨有卧龙</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jackyfzh" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:jackyfeng201314@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问Jacky的个人博客！我会在这里分享编程、摄影和感想。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BAPython%E7%8E%AF%E5%A2%83"><span class="toc-number">1.</span> <span class="toc-text">搭建Python环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%88%E9%80%82%E7%9A%84%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text">合适的编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#notebook%E7%B3%BB%E5%88%97"><span class="toc-number">2.1.</span> <span class="toc-text">notebook系列</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Jupyter-lab-%E5%9B%9B%E6%98%9F-%E6%8E%A8%E8%8D%90"><span class="toc-number">2.1.1.</span> <span class="toc-text">Jupyter lab [四星(推荐)]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Jupyter-notebook-%E4%BA%8C%E6%98%9F"><span class="toc-number">2.1.2.</span> <span class="toc-text">Jupyter notebook [二星]</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E7%B3%BB%E5%88%97"><span class="toc-number">2.2.</span> <span class="toc-text">文本编辑器系列</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Visual-Studio-Code-Vscode-%E4%BA%94%E6%98%9F-%E6%8E%A8%E8%8D%90"><span class="toc-number">2.2.1.</span> <span class="toc-text">Visual Studio Code (Vscode) [五星(推荐)]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Pycharm-%E4%B8%89%E6%98%9F-%E6%B2%A1%E7%94%A8%E8%BF%87"><span class="toc-number">2.2.2.</span> <span class="toc-text">Pycharm [三星(没用过)]</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pyecharts%E5%AE%89%E8%A3%85"><span class="toc-number">3.</span> <span class="toc-text">pyecharts安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%AE%8C%E6%88%90"><span class="toc-number">3.1.</span> <span class="toc-text">基本完成</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/03/29/hello-world/" title="Hello World"><img src="https://i.niupic.com/images/2022/03/28/9XC1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/03/29/hello-world/" title="Hello World">Hello World</a><time datetime="2022-03-28T23:46:41.251Z" title="发表于 2022-03-29 07:46:41">2022-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/21/springboot-vue-blog-note/" title="Springboot+Vue前后端分离博客笔记"><img src="https://img0.baidu.com/it/u=2698410332,2050932400&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=774&amp;h=364" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Springboot+Vue前后端分离博客笔记"/></a><div class="content"><a class="title" href="/2022/03/21/springboot-vue-blog-note/" title="Springboot+Vue前后端分离博客笔记">Springboot+Vue前后端分离博客笔记</a><time datetime="2022-03-21T05:00:00.000Z" title="发表于 2022-03-21 13:00:00">2022-03-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/21/think-about-love/" title="关于“喜欢”的思考————致青春的我"><img src="https://img0.baidu.com/it/u=177151763,1415003735&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于“喜欢”的思考————致青春的我"/></a><div class="content"><a class="title" href="/2022/03/21/think-about-love/" title="关于“喜欢”的思考————致青春的我">关于“喜欢”的思考————致青春的我</a><time datetime="2022-03-21T05:00:00.000Z" title="发表于 2022-03-21 13:00:00">2022-03-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/27/markdown-tool-marktext/" title="高效的markdown笔记工具——Marktext"><img src="https://img2.baidu.com/it/u=2768059125,1592752014&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=342" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高效的markdown笔记工具——Marktext"/></a><div class="content"><a class="title" href="/2022/02/27/markdown-tool-marktext/" title="高效的markdown笔记工具——Marktext">高效的markdown笔记工具——Marktext</a><time datetime="2022-02-27T12:00:00.000Z" title="发表于 2022-02-27 20:00:00">2022-02-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/27/new_markdown_tool/" title="高效的markdown笔记工具——VNote"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2Fv2-13ff4e7addc973dce011fb7f4bc26b25_b.jpg&amp;refer=http%3A%2F%2Fpic2.zhimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1648530388&amp;t=d6975c1b4884205a16b4fb07750bd2e9" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高效的markdown笔记工具——VNote"/></a><div class="content"><a class="title" href="/2022/02/27/new_markdown_tool/" title="高效的markdown笔记工具——VNote">高效的markdown笔记工具——VNote</a><time datetime="2022-02-27T05:00:00.000Z" title="发表于 2022-02-27 13:00:00">2022-02-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jacky Feng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

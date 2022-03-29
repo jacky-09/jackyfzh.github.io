@@ -1,0 +1,199 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>git使用体验 | Jacky的个人博客</title><meta name="keywords" content="git"><meta name="author" content="Jacky Feng"><meta name="copyright" content="Jacky Feng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="git使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git使用体验">
+<meta property="og:url" content="http://example.com/2021/04/18/git_try/index.html">
+<meta property="og:site_name" content="Jacky的个人博客">
+<meta property="og:description" content="git使用">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3218265100,3960202286&fm=26&gp=0.jpg">
+<meta property="article:published_time" content="2021-04-18T03:05:40.000Z">
+<meta property="article:modified_time" content="2021-04-18T05:39:32.575Z">
+<meta property="article:author" content="Jacky Feng">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3218265100,3960202286&fm=26&gp=0.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/04/18/git_try/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'git使用体验',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-04-18 13:39:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.niupic.com/images/2022/03/28/9XBI.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3218265100,3960202286&amp;fm=26&amp;gp=0.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jacky的个人博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">git使用体验</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-04-18T03:05:40.000Z" title="发表于 2021-04-18 11:05:40">2021-04-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-04-18T05:39:32.575Z" title="更新于 2021-04-18 13:39:32">2021-04-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="git使用体验"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>原来还是个小白的时候（当然<em>现在还是</em>），我用的一直是<code>github desktop</code>。如今尝试着使用<code>git</code>，特此记录。</p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>Git的安装比较简单，进入Git官网的<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Windows下载地址</a>，安装包就开始自动下载了。</p>
+<p>打开exe，按照默认选项安装即可。</p>
+<p>完成后在开始菜单里打开Git Bash，弹出一个跟cmd类似的窗口，说明安装成功。</p>
+<h2 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h2><p><strong>首先要配置的名字和Email地址</strong>，以后每次进行git操作时才能有据可查。打开Git Bash，输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &#x27;your_name&#x27;</span><br><span class="line">$ git config --global user.email &#x27;your_email&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><strong>接下来我们需要创建版本库</strong>，这个仓库中的文件Git会进行跟踪，以便日后的数据备份和还原。</p>
+<p>随便找一个位置，创建一个文件夹<code>test</code>作为版本库目录：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir test</span><br></pre></td></tr></table></figure>
+<p>进入刚创建文件夹的路径：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd git_repo</span><br></pre></td></tr></table></figure>
+<p>再输入指令<code>git init</code>初始化Git，告诉Git这里是一个版本库了：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+<p>这样就建好了一个空的仓库了。</p>
+<h2 id="新建文件"><a href="#新建文件" class="headerlink" title="新建文件"></a>新建文件</h2><p>在git_repo目录中创建一个test.txt，内容随意。<br>在bash中输入命令告诉Git需要追踪的文件，<code>.</code>表示所有文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
+<p>再用命令进行提交：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;test&quot;</span><br></pre></td></tr></table></figure>
+<p>如果bash打印出下面的文本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[master 5e04f34] test git</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"> create mode xxx xxx</span><br></pre></td></tr></table></figure>
+<p>说明版本库已经顺利运行起来了。</p>
+<h2 id="连接github"><a href="#连接github" class="headerlink" title="连接github"></a>连接github</h2><p>首先还是打开Git Bash，<strong>创建SSH Key</strong>，用于Git和GitHub之间的SSH加密传输：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &#x27;your_email&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>回车后提示输入<code>passphrase</code>，类似于密码，每次于GitHub通信时都会要求输入。</p>
+<p><code>passphrase</code>也可以不用设置，一路回车就好。</p>
+<p>完成后会在用户目录里生成.ssh目录，比如说我的在<code>C:\Users\dusai\.ssh</code>，里面包含<code>id_rsa</code>和<code>id_rsa.pub</code>两个文件。</p>
+<p>接下来<strong>登录GitHub账号</strong>，在<code>account/settings</code>中找到<code>SSH and GPG keys</code>，点击<code>NEW SSH key</code>；其中的<code>Title</code>文本框请随便填，<code>Key</code>文本框填入<code>id_rsa.pub</code>中的内容。点击<code>Add SSH key</code>，就完成了SSH key 的添加。</p>
+<p><img src="D:\img\git2.jpg" alt="img"></p>
+<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p><strong>首先创建版本库。</strong>点击GitHub导航栏里的<code>New repository</code>：</p>
+<p><img src="D:\img\git4.jpg" alt="img"></p>
+<p>在<code>Repository name</code>中输入库名称。这里因为是我的<a target="_blank" rel="noopener" href="http://www.dusaiphoto.com/article/article-detail/2/">Django搭建博客教程</a>的库，因此输入<code>django_blog_tutorial</code>。</p>
+<p><img src="D:\img\git2_uYxRjes.jpg" alt="img"></p>
+<p>写完后点击<code>Create repository</code>，远程版本库就生成了。</p>
+<p>进入库的主页，点击SSH，后面的就是远程库的地址：</p>
+<p><img src="D:\img\git3.jpg" alt="img"></p>
+<p>根据页面的提示，进入本地刚才创建的库目录<code>git_repo</code>，将本地的Git库和远程仓库关联起来：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:stacklens/django_blog_tutorial.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p>bash中打印出如下字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Enumerating objects: 4, done.</span><br><span class="line">Counting objects: 100% (4/4), done.</span><br><span class="line">Delta compression using up to 4 threads.</span><br><span class="line">Compressing objects: 100% (2/2), done.</span><br><span class="line">Writing objects: 100% (3/3), 281 bytes | 140.00 KiB/s, done.</span><br><span class="line">Total 3 (delta 0), reused 0 (delta 0)</span><br><span class="line">To github.com:stacklens/django_blog_tutorial.git</span><br><span class="line">   848cc16..5e04f34  master -&gt; master</span><br><span class="line">Branch &#x27;master&#x27; set up to track remote branch &#x27;master&#x27; from &#x27;origin&#x27;.</span><br></pre></td></tr></table></figure>
+
+<p>则表示本地Git已经顺利连接上了GitHub远程仓库。</p>
+<p>以后每次需要提交代码到GitHub时，<strong>进入到git仓库文件夹，</strong>执行下面的代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 提交当前目录下所以文件</span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"># 提交记录说明 </span><br><span class="line">$ git commit -m &quot;xxx&quot;</span><br><span class="line"></span><br><span class="line"># 提交到github</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>注意：本文部分内容转载自<a target="_blank" rel="noopener" href="https://www.dusaiphoto.com/article/13/">杜塞的个人网站</a></strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Jacky Feng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2021/04/18/git_try/">http://example.com/2021/04/18/git_try/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Jacky的个人博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/git/">git</a></div><div class="post_share"><div class="social-share" data-image="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3218265100,3960202286&amp;fm=26&amp;gp=0.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/05/21/linux-deepin/"><img class="prev-cover" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1286705287,1844838023&amp;fm=26&amp;gp=0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">VMware安装deepin</div></div></a></div><div class="next-post pull-right"><a href="/2021/04/17/pdm-tui-jian/"><img class="next-cover" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=372474886,775763543&amp;fm=26&amp;gp=0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">pdm包管理器</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.niupic.com/images/2022/03/28/9XBI.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jacky Feng</div><div class="author-info__description">时人莫小池中水，浅处无妨有卧龙</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">53</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jackyfzh" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:jackyfeng201314@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问Jacky的个人博客！我会在这里分享编程、摄影和感想。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Git"><span class="toc-number">1.</span> <span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEGit"><span class="toc-number">2.</span> <span class="toc-text">配置Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">新建文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5github"><span class="toc-number">4.</span> <span class="toc-text">连接github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="toc-number">5.</span> <span class="toc-text">创建仓库</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/03/29/hello-world/" title="Hello World"><img src="https://i.niupic.com/images/2022/03/28/9XC1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/03/29/hello-world/" title="Hello World">Hello World</a><time datetime="2022-03-28T23:46:41.251Z" title="发表于 2022-03-29 07:46:41">2022-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/21/springboot-vue-blog-note/" title="Springboot+Vue前后端分离博客笔记"><img src="https://img0.baidu.com/it/u=2698410332,2050932400&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=774&amp;h=364" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Springboot+Vue前后端分离博客笔记"/></a><div class="content"><a class="title" href="/2022/03/21/springboot-vue-blog-note/" title="Springboot+Vue前后端分离博客笔记">Springboot+Vue前后端分离博客笔记</a><time datetime="2022-03-21T05:00:00.000Z" title="发表于 2022-03-21 13:00:00">2022-03-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/21/think-about-love/" title="关于“喜欢”的思考————致青春的我"><img src="https://img0.baidu.com/it/u=177151763,1415003735&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于“喜欢”的思考————致青春的我"/></a><div class="content"><a class="title" href="/2022/03/21/think-about-love/" title="关于“喜欢”的思考————致青春的我">关于“喜欢”的思考————致青春的我</a><time datetime="2022-03-21T05:00:00.000Z" title="发表于 2022-03-21 13:00:00">2022-03-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/27/markdown-tool-marktext/" title="高效的markdown笔记工具——Marktext"><img src="https://img2.baidu.com/it/u=2768059125,1592752014&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=342" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高效的markdown笔记工具——Marktext"/></a><div class="content"><a class="title" href="/2022/02/27/markdown-tool-marktext/" title="高效的markdown笔记工具——Marktext">高效的markdown笔记工具——Marktext</a><time datetime="2022-02-27T12:00:00.000Z" title="发表于 2022-02-27 20:00:00">2022-02-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/27/new_markdown_tool/" title="高效的markdown笔记工具——VNote"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2Fv2-13ff4e7addc973dce011fb7f4bc26b25_b.jpg&amp;refer=http%3A%2F%2Fpic2.zhimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1648530388&amp;t=d6975c1b4884205a16b4fb07750bd2e9" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高效的markdown笔记工具——VNote"/></a><div class="content"><a class="title" href="/2022/02/27/new_markdown_tool/" title="高效的markdown笔记工具——VNote">高效的markdown笔记工具——VNote</a><time datetime="2022-02-27T05:00:00.000Z" title="发表于 2022-02-27 13:00:00">2022-02-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jacky Feng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
