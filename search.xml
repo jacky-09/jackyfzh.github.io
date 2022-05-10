@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>前端学习路线（干货）</title>
+      <link href="/2022/05/10/qian-duan-learn-line/"/>
+      <url>/2022/05/10/qian-duan-learn-line/</url>
+      
+        <content type="html"><![CDATA[<p>以下内容教程包含html&#x2F;css&#x2F;js&#x2F;vue等，给小白。欢迎<strong>友好的</strong>指正，大佬勿喷。</p><h2 id="Html学习"><a href="#Html学习" class="headerlink" title="Html学习"></a>Html学习</h2><ol><li><strong>入门教程（词典版）</strong>：<a href="https://www.w3school.com.cn/html/index.asp">https://www.w3school.com.cn/html/index.asp</a></li><li><strong>入门教程（精简版）</strong>：<a href="https://www.fqysharing.top/2021/05/23/basic_html/">https://www.fqysharing.top/2021/05/23/basic_html&#x2F;</a></li><li><strong>页面美化库教程（官网版）</strong>：<a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li><li><strong>页面美化库教程（中文版）</strong>：<a href="https://www.w3school.com.cn/bootstrap5/index.asp">https://www.w3school.com.cn/bootstrap5/index.asp</a></li><li><strong>实战教程（进阶版）</strong>：<a href="https://zhuanlan.zhihu.com/p/210920545?ivk_sa=1024320u">https://zhuanlan.zhihu.com/p/210920545?ivk_sa&#x3D;1024320u</a></li></ol><blockquote><p><strong>笔者的话：</strong></p><ul><li>bootstrap页面美化可以好好学一学</li><li>实战教程不用做了，到时候做vue的实战</li></ul></blockquote><h2 id="Css学习"><a href="#Css学习" class="headerlink" title="Css学习"></a>Css学习</h2><ol><li><strong>入门教程（词典版）</strong>：<a href="https://www.w3school.com.cn/css/index.asp">https://www.w3school.com.cn/css/index.asp</a></li><li><strong>入门教程（精简版）</strong>：<a href="https://www.fqysharing.top/2021/05/23/basic_css/">https://www.fqysharing.top/2021/05/23/basic_css&#x2F;</a></li></ol><blockquote><p><strong>笔者的话：</strong></p><p>除非对自己的配色和审美有绝对自信，简单学一学就可以了，开发可以用bootstrap。</p></blockquote><h2 id="Javascript学习"><a href="#Javascript学习" class="headerlink" title="Javascript学习"></a>Javascript学习</h2><ol><li><strong>入门教程（词典版）</strong>：<a href="https://www.w3school.com.cn/js/index.asp">https://www.w3school.com.cn/js/index.asp</a></li><li><strong>入门教程（精简版）</strong>：<a href="https://www.fqysharing.top/2021/07/17/basic_js_summary/">https://www.fqysharing.top/2021/07/17/basic_js_summary&#x2F;</a></li></ol><blockquote><p><strong>笔者的话：</strong></p><p>JavaScript的入门曲线不算曲折，但是深入后很复杂，潜力也很大。要了解基本的语法，但是不必太过于详细的、花太多时间去学习基础。把时间花在vue这类的框架上更有价值。</p></blockquote><h2 id="Vuejs学习"><a href="#Vuejs学习" class="headerlink" title="Vuejs学习"></a>Vuejs学习</h2><ol><li><strong>官网教程（看不懂版）</strong>：<a href="https://cn.vuejs.org/index.html">https://cn.vuejs.org/index.html</a></li><li><strong>入门教程（极简版）</strong>：<a href="https://jackyfzh.github.io/2020/08/12/drf-vue-vue-jichu/">https://jackyfzh.github.io/2020/08/12/drf-vue-vue-jichu/</a></li><li><strong>实战教程（必看版）</strong>：<a href="https://zmrenwu.com/courses/vue2x-todo-tutorial/">https://zmrenwu.com/courses/vue2x-todo-tutorial/</a></li></ol><blockquote><p>笔者的话：</p><p>我认为vue是未来的大势所趋，认真学习。初学者依次看2和3，基本就算是入门啦。</p></blockquote><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>本文持续更新，希望对大家有帮助。</p><p><strong>文章首发于<a href="http://jackyfzh.github.io/">Jacky的个人博客</a>，转载须注明。</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 学习路线 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Notion从入门到卸载(上)</title>
       <link href="/2022/05/06/notion-course-1/"/>
       <url>/2022/05/06/notion-course-1/</url>
